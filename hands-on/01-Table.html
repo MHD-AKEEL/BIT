@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .table-wrapper table,
+        .table-wrapper th,
+        .table-wrapper td{
+            border: 1px solid black;
+        }
+        .collapse table{
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 
 <body>
@@ -95,9 +105,9 @@
             <td>events</td>
         </tr>
     </table>
-<hr>
-<h2>Table with Border</h2>
-<p>Using border attribute</p>
+    <hr>
+    <h2>Table with Border</h2>
+    <p>Using border attribute</p>
 
     <table border="1">
         <tr>
@@ -124,6 +134,51 @@
             <td>events</td>
         </tr>
     </table>
+    <br>
+
+    <h2>Table with Section</h2>
+    <div class="table-wrapper collapse">
+        <table>
+            <caption>Web Technologies</caption>
+            <thead>
+                <tr>
+                    <th>HTML</th>
+                    <th>CSS</th>
+                    <th>JavaScript</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Structure</td>
+                    <td>Styling</td>
+                    <td>interactivity</td>
+                </tr>
+
+                <tr>
+                    <td>Tag</td>
+                    <td>selection</td>
+                    <td>function</td>
+                </tr>
+
+                <tr>
+                    <td>forms</td>
+                    <td>layout</td>
+                    <td>events</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>core markup</td>
+                    <td>core styling</td>
+                    <td>core scripting</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+
 
 </body>
 
