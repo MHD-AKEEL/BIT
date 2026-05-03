@@ -9,7 +9,7 @@
 
 <body>
   <h1>Form Attributes</h1>
-  <form action="submit.php" method="post" target="_blank">
+  <form action="submit.php" method="post" target="_blank" enctype="multipart/form-data">
     <!-- Input type = Text -->
     <label for="username">Username:</label>
     <input type="text" name="username" id="username"><br><br>
@@ -31,15 +31,31 @@
     <br><br>
 
     <!-- Type: Checkbox -->
-     <label for="">Hobbies :</label>
-     <input type="checkbox" name="hobbies" value="reading" id="reading">
-     <label for="reading">Reading</label>
+    <label for="">Hobbies :</label>
+    <input type="checkbox" name="hobbies" value="reading" id="reading">
+    <label for="reading">Reading</label>
 
-     <input type="checkbox" name="hobbies" value="sport" id="sport">
-     <label for="sport">Sport</label>
+    <input type="checkbox" name="hobbies" value="sport" id="sport">
+    <label for="sport">Sport</label>
 
-     <input type="checkbox" name="hobbies" value="music" id="music">
-     <label for="music">Music</label> <br><br>
+    <input type="checkbox" name="hobbies" value="music" id="music">
+    <label for="music">Music</label> <br><br>
+
+    <!-- Type: File -->
+     <label for="file-single">Upload Single File:</label>
+     <input type="file" name="file-single" id="file-single"><br><br>
+
+     <!-- Type: Multiple File -->
+     <label for="file-multiple">Upload Multiple Files</label>
+     <input type="file" name="file-multiple" id="file-multiple" multiple> <br><br>
+
+     <!-- Type: Color -->
+     <label for="favcolor">Select a Color</label>
+     <input type="color" name="favcolor" id="favcolor"> <br><br>
+
+     <!-- Type: Date -->
+      <label for="date">Select a Date</label>
+      <input type="date" id="date" name="date"><br><br>
 
     <input type="submit" value="Submit">
     <input type="reset" value="Reset">
