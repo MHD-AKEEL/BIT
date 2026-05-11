@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Attributes</title>
 </head>
+
 <body>
     <h1>Input Attributes</h1>
     <form action="https://httpbin.org/post" method="post" target="_blank">
@@ -13,38 +15,45 @@
         <!-- Name -->
 
         <!-- Value -->
-         <b>Value</b><br>
-         <label>Value Attribute: <input type="text" name="username" value="user123@gmail.com"></label><br><br>
+        <b>Value</b><br>
+        <label>Value Attribute: <input type="text" name="username" value="user123@gmail.com"></label><br><br>
 
-         <!-- Read Only -->
-          <label>Read-Only Attribute: <input type="text" name="readonly-text" value="user123@gmail.com" readonly></label><br><br>
+        <!-- Read Only -->
+        <label>Read-Only Attribute: <input type="text" name="readonly-text" value="user123@gmail.com"
+                readonly></label><br><br>
 
-          <!-- Disabled -->
-           <label>Disabled Attribute: <input type="text" name="disable-text" value="user123@gmail.com" disabled></label><br><br>
+        <!-- Disabled -->
+        <label>Disabled Attribute: <input type="text" name="disable-text" value="user123@gmail.com"
+                disabled></label><br><br>
 
-           <!-- Max Length -->
-            <b>Max Length</b><br><br>
-            <label>type Text: <input type="text" maxlength="10" ></label><br><br>
-            <label>Type Password: <input type="password" maxlength="10"></label><br><br>
-            <label>Type Email: <input type="email" maxlength="10"></label><br><br>
-            <label>Type tel: <input type="tel" maxlength="10"></label><br><br>
-            <label>Type search: <input type="search" maxlength="10"></label><br><br>
-            <label>Type URL: <input type="url" maxlength="10"></label><br><br>
+        <!-- Max Length -->
+        <b>Max Length</b><br><br>
+        <label>type Text: <input type="text" maxlength="10"></label><br><br>
+        <label>Type Password: <input type="password" maxlength="10"></label><br><br>
+        <label>Type Email: <input type="email" maxlength="10"></label><br><br>
+        <label>Type tel: <input type="tel" maxlength="10"></label><br><br>
+        <label>Type search: <input type="search" maxlength="10"></label><br><br>
+        <label>Type URL: <input type="url" maxlength="10"></label><br><br>
 
-            <!-- Size -->
-                <b>Size</b><br><br>
-                <label>type Text: <input type="text" size="5" ></label><br><br>
-                <label>Type Password: <input type="password" size="10"></label><br><br>
-                <label>Type Email: <input type="email" size="15"></label><br><br>
-                <label>Type tel: <input type="tel" size="10"></label><br><br>
-                <label>Type search: <input type="search" size="5"></label><br><br>
-                <label>Type URL: <input type="url" size="10"></label><br><br>
+        <!-- Size -->
+        <b>Size</b><br><br>
+        <label>type Text: <input type="text" size="5"></label><br><br>
+        <label>Type Password: <input type="password" size="10"></label><br><br>
+        <label>Type Email: <input type="email" size="15"></label><br><br>
+        <label>Type tel: <input type="tel" size="10"></label><br><br>
+        <label>Type search: <input type="search" size="5"></label><br><br>
+        <label>Type URL: <input type="url" size="10"></label><br><br>
 
-                <!-- Min / Max -->
-                 <b>Min /Max</b><br><br>
-                    <label>Type Number: <input type="number" min="0" max="100"></label><br><br>
+        <!-- Min / Max -->
+        <b>Min /Max</b><br><br>
+        <label>Type Number: <input type="number" min="0" max="100"></label><br><br>
+        <label>Type Range: <input type="range" name="min-max-range" min="1" max="100"></label><br><br>
+        <label>Type Date: <input type="date" min="2026-01-01" max="2030-01-01"></label><br><br>
+        <label>Type Date and Time: <input type="datetime-local" min="2026-01-01T00:00"
+                max="2030-01-01T23:59"></label><br><br>
 
-         <input type="submit" name="Submit">
+        <input type="submit" name="Submit">
     </form>
 </body>
+
 </html>
