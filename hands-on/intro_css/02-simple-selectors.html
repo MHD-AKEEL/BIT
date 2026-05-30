@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Selectors</title>
+    <style>
+        /*Universal selector*/
+        *{
+            font-family: sans-serif;
+        }
+        /*Element selector*/
+        span{
+            color: blue;
+        }
+        /* ID selector */
+        #main-title{
+            text-transform: uppercase;
+        }
+        /* Class selector */
+        .intro{
+            font-style: italic;
+        }
+        /* Group selector */
+        h1, p{
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-title">Simple Selectors</h1>
+    <p class="intro">This is a paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <span>This is inside span tag.</span>
+</body>
+</html>
