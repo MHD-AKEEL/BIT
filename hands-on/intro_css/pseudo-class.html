@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class</title>
+    <style>
+        .btn{
+            background-color:blue;
+            color:white;
+            padding: 10px 20px;
+            border: none;
+            cursor:pointer;
+        }
+        .text-input{
+            padding: 0.5rem 1rem;
+        }
+        .link{
+            color:green;
+        }
+        /* hover style */
+        .btn:hover{
+            background-color: red;
+        }
+        /* Active */
+        .btn:active{
+            background-color: green;
+        }
+        /* focus */
+        .text-input:focus{
+            outline: none;
+            background-color: lightyellow;
+            border: 1px solid orange;
+        }
+        /* Active */
+        .link:active{
+            color:red;
+        }
+        /* Visited */
+        .link:visited{
+            color:purple;
+        }
+
+        /* first child */
+        p:first-child{
+            color:blue;
+        }
+
+        .list li:first-child{
+            color:red;
+            font-weight:bold;
+        }
+        /* last child */
+        .list li:last-child{
+            color:green;
+            font-weight:bold;
+        }
+        /* nth child */
+        .list li:nth-child(3){
+            color:blue;
+            font-weight:bold;
+        }
+        .list li:nth-child(even){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo-class</h2>
+    <button class="btn">Click me</button> <br><br>
+    <input type="text" class="text-input" placeholder="Type here..."> <br><br>
+    <a href="https://www.w3schools.com/" class="link">W3schools</a>
+
+    <h2>Structure pseudo-classes</h2>
+    <p>paragraph inside body tag</p>
+
+    <div>
+        <p>paragraph inside tag</p>
+    </div>
+
+    <p>paragraph inside body tag</p>
+
+    <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ul>
+</body>
+</html>
