@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-element Selectors</title>
+    <style>
+        .article::first-letter{
+            color:green;
+            font-size:3rem;
+            font-weight:bold;
+            margin-right: 0.5rem;
+        }
+        .article::first-line{
+            color:blue;
+            font-variant: small-caps;
+        }
+
+        /* content pseudo */
+        .news::before{
+            content:"Before - ";
+        }
+        .news::after{
+            content:" - After";
+        }
+        .price::before{
+            content:"$";
+            font-size:0.6rem;
+        }
+        .price::after{
+            content:" USD";
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo-element Selectors</h2>
+    <p class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae corporis distinctio voluptatem
+         possimus veniam voluptas inventore ducimus similique minus quia, 
+        quidem molestiae vero cupiditate laborum debitis deserunt aliquid id!</p>
+
+        <h2>content pseudo element selector</h2>
+        <h2 class="news">Latest News</h2>
+        <p class="price">99</p>
+</body>
+</html>
