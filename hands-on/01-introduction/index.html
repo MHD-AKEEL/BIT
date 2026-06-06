@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+    <!-- external JS -->
+    <!-- <script src="./index.js"></script> -->
+
+    <script>
+        // Internal JS
+        console.log('01-Internal JS from HEAD section');
+    </script>
+
+    <!-- External JS -->
+    <!-- <script src="./index.js"></script> -->
+</head>
+
+<body>
+    <div id="display-area" style="border: 1px solid gray; 
+    padding: 10px; margin-bottom: 10px;">
+        Existing the box...
+    </div>
+    <button onclick="console.log('04-Inline JS from Button click event')">Click Me</button>
+
+    <script>
+        // window alert
+        window.alert('Introduction to JavaScript');
+
+        // Inner HTML output
+        document.getElementById('display-area').innerHTML = "New content for the box...";
+
+        // Document write
+        document.write("<p style='color: blue;'>This is line was added by JavaScript via document.write method.</p>");
+
+        // Internal JS from BODY section
+        console.log('02-Internal JS from BODY section');
+    </script>
+
+    <!-- External JS -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
