@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables & types</title>
+</head>
+<body>
+    <script>
+    /*variables declaration*/
+    //let
+    // let personName; //declaration
+    // let personName = 'John Doe'; //declaration + initialization
+    // personName = 'Jane Doe'; //re-assignment
+    // console.log('Person Name is: ' + personName);
+
+    //const
+    // const personName: // cannot just declare. need to initialize at the time of declaration
+    // const personName = 'John Doe';
+    
+    // console.log('Person Name is: ', personName);
+
+    //var
+    // var personName; //declaration
+    // var personName = 'John Doe'; //initialization
+    // var personName = 'Jane Doe'; //re-declaration + re-assignment
+    // console.log('Person Name is: ' + personName);
+
+
+    /*Data Types*/
+    //Type String
+    let productName ='Laptop';
+    console.log('Type of productName: ', typeof productName);
+
+    //Type Number
+    const productPrice = 1000;
+    console.log('Type of productPrice: ', typeof productPrice);
+
+    //Type Boolean
+    const isAvailable = false;
+    console.log('Type of isAvailable: ', typeof isAvailable);
+
+    //Type of object
+    const product = {
+        id : 101,
+        brand : 'Dell',
+    };
+    console.log('Type of product: ', typeof product);
+
+    //array
+    const products = ['laptop', 'mobile', 'tablet'];
+    console.log('Type of products: ', typeof products);
+
+    //type of undefined
+    let checkoutTime;
+    console.log('Type of checkoutTime: ', typeof checkoutTime);
+
+    //type of null
+    let coupon = null;
+    console.log('Type of coupon: ', typeof coupon);
+    </script>
+</body>
+</html>
