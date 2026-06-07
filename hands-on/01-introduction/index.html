@@ -9,8 +9,10 @@
     <!-- <script src="./index.js"></script> -->
 
     <script>
-        // Internal JS
+        // Internal JS from HEAD section
         console.log('01-Internal JS from HEAD section');
+
+        document.getElementById('main-title').style.color = 'blue';
     </script>
 
     <!-- External JS -->
@@ -18,13 +20,23 @@
 </head>
 
 <body>
+    <h1 id="main-title">Introduction to JavaScript</h1>
+
     <div id="display-area" style="border: 1px solid gray; 
     padding: 10px; margin-bottom: 10px;">
         Existing the box...
     </div>
+
+    <!-- inline JS -->
     <button onclick="console.log('04-Inline JS from Button click event')">Click Me</button>
+    
+    <br><br>
+
+    <!-- Document.write after page load -->
+     <button onclick="document.write('This Line was added by javaScript via document.write method.')">Click Me to Document Write</button>
 
     <script>
+        document.getElementById('main-title').style.color = 'blue';
         // window alert
         window.alert('Introduction to JavaScript');
 
